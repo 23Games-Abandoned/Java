@@ -1,0 +1,25 @@
+package Podstawy;
+import java.util.Scanner;
+
+public class Funkcje11 {
+	
+	public static int n,m,x;
+	public static Scanner odczyt;
+
+	public static void main(String[] args) {
+		odczyt = new Scanner(System.in);
+		System.out.println("Podaj licznê:");
+		n=odczyt.nextInt();
+		System.out.println("Podaj potêgê:");
+		m=odczyt.nextInt();
+		potega(n,m);
+	}
+
+	public static int potega (int a, int b) {
+		x=n;
+		for (int i=n;i<=m;i++){
+			x*=n;
+		}
+		return x;
+	}
+}
