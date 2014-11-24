@@ -1,5 +1,5 @@
 
-public class zad1 {
+public class Zad1 {
 	
 	public static int p=0,n=0;
 
