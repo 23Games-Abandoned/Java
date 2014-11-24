@@ -1,0 +1,27 @@
+package Podstawy;
+import java.util.Scanner;
+
+public class Funkcje14 {
+	
+	public static int a,b,c,d,x1,x2,x0;
+	public static Scanner odczyt;
+
+	public static void main(String[] args) {
+		odczyt = new Scanner(System.in);
+		System.out.println("Podaj a:");
+		a=odczyt.nextInt();
+		System.out.println("Podaj b:");
+		b=odczyt.nextInt();
+		System.out.println("Podaj c:");
+		c=odczyt.nextInt();
+		System.out.println(a+"x^2+"+b+"x+"+c+"=0");
+	}
+
+	public static void suma_cyfr (int a) {
+		x=0;
+		for (int i=a;i>=0;i--){
+			x+=i;
+		}
+		return x;
+	}
+}
