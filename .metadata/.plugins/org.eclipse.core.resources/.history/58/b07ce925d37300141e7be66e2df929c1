@@ -1,0 +1,29 @@
+
+
+package podsatwy;
+
+import functions.podstawy;
+import java.util.Scanner;
+public class zad9 {
+	
+	
+	
+public static Scanner cin;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		cin = new Scanner(System.in);
+
+		int d1,d2,d3;
+		System.out.println("Podaj liczbe");
+		d1=cin.nextInt();
+		czyp(d1);
+		/*System.out.println("Podaj Dzieñ");
+		d2=cin.nextInt();
+		System.out.println("Podaj Bok 3");
+		d3=cin.nextInt();
+		//System.out.println("Liczby Podzielne przez : "+d3);*/
+		
+	}
+
+}

@@ -1,10 +1,12 @@
+
+
 package podsatwy;
 
+import functions.podstawy;
 import java.util.Scanner;
-
 public class zad9 {
 	
-	public static boolean poda(int a)
+	/*public static boolean poda(int a)
 	{
 		int d=0;
 		for(int i=1;i<=a/2;i++)
@@ -54,7 +56,7 @@ public class zad9 {
 		}
 		System.out.println(d+":"+l);
 	}
-	
+	*/
 public static Scanner cin;
 	
 	public static void main(String[] args) {
@@ -64,7 +66,8 @@ public static Scanner cin;
 		int d1,d2,d3;
 		System.out.println("Podaj liczbe");
 		d1=cin.nextInt();
-		czyp(d1);
+		podstawy.czyp(d1);
+		//czyp(d1);
 		/*System.out.println("Podaj Dzieñ");
 		d2=cin.nextInt();
 		System.out.println("Podaj Bok 3");
