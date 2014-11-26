@@ -21,7 +21,7 @@ public class str {
 	}
 	
 	public static String string_r(String source){
-		String str="";
+		String str;
 		for (String part : source.split(" ")) {
 		    System.out.print(new StringBuilder(part).reverse().toString());
 		    System.out.print(" ");

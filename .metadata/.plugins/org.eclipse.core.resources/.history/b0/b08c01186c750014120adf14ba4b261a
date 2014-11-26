@@ -20,14 +20,6 @@ public class str {
 	System.out.println(str);
 	}
 	
-	public static String string_r(String source){
-		String str="";
-		for (String part : source.split(" ")) {
-		    System.out.print(new StringBuilder(part).reverse().toString());
-		    System.out.print(" ");
-		}
-		return str;
-	}
 	public static void plec (String str){
 		if(str.endsWith("a")){
 			System.out.print(str+" jestes kobiet¹!!!");
