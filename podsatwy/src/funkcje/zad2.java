@@ -54,7 +54,7 @@ public class zad2 {
 	
 	public static void main(String[] args) {
 		cin = new Scanner(System.in);
-		int d1,d2,d3;
+		int d1;
 		d1=load("pierwsza liczbe");
 		System.out.println(d1);
 		div(d1);

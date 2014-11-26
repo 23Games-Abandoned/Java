@@ -103,7 +103,7 @@ public class zad5 {
 	
 	public static void lina(int a,int b)
 	{
-		float x=0,y=0;
+		float x=0;
 		if(a!=0)
 		{
 			x=b/a;
@@ -126,7 +126,7 @@ public static Scanner cin;
 		// TODO Auto-generated method stub
 		cin = new Scanner(System.in);
 
-		int d1,d2,d3;
+		int d1,d2;
 		System.out.println("Podaj liczbe 1");
 		d1=cin.nextInt();
 		System.out.println("Podaj liczbe 2");

@@ -23,7 +23,7 @@ public static Scanner cin;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		cin = new Scanner(System.in);
-		int d1,d2,d3;
+		int d1;
 		System.out.println("Podaj Liczbê");
 		d1=cin.nextInt();
 		/*System.out.println("Podaj Liczba drug¹");

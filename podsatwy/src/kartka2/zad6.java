@@ -103,7 +103,7 @@ public class zad6 {
 	
 	public static void lina(int a,int b)
 	{
-		float x=0,y=0;
+		float x=0;
 		if(a!=0)
 		{
 			x=b/a;
@@ -120,7 +120,7 @@ public class zad6 {
 	
 	public static void rkwadrat(int a,int b)
 	{
-		float x=0,y=0;
+		float x=0;
 		if(a!=0)
 		{
 			x=b/a;
@@ -150,7 +150,7 @@ public class zad6 {
 		lina(d1,d2);
 		System.out.println("Podaj liczbe 3");
 		d3=cin.nextInt();
-		//System.out.println("Liczby Podzielne przez : "+d3);*/
+		System.out.println("Liczby Podzielne przez : "+d3);
 		
 		
 	}

@@ -20,14 +20,92 @@ public class str {
 	System.out.println(str);
 	}
 	
-	public static String string_r(String source){
-		String str="";
-		for (String part : source.split(" ")) {
-		    System.out.print(new StringBuilder(part).reverse().toString());
-		    System.out.print(" ");
-		}
-		return str;
+	public static String string_r(String str){
+		return new StringBuilder(str).reverse().toString();
 	}
+	
+	public static int string_c(String str,char char_){
+		int l=0;
+		for(int i=0;i<str.length();i++){
+			if(str.charAt(i)==char_){
+				l++;
+			}
+		}
+		return l;
+	}
+	
+	public static int toArabic(String number) {
+		int i=0;
+        while (number.length()>0) {
+        if (number.endsWith("M")){ 
+        	i+= 1000;
+        	number=number.substring(0, number.length()-1);
+        }
+        if (number.endsWith("CM")){
+        	i+= 900 ;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("D")){ 
+        	i+= 500 ;
+        	number=(number.substring(0, number.length()-1));
+        }
+        if (number.endsWith("CD")){
+        	i+= 400 ;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("C")){ 
+        	i+= 100 ;
+        	number=(number.substring(0, number.length()-1));
+        }
+        if (number.endsWith("XC")){ 
+        	i+= 90 ;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("L")){ 
+        	i+= 50 ;
+        	number=(number.substring(0, number.length()-1));
+        }
+        if (number.endsWith("XL")){ 
+        	i+= 40;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("X")){ 
+        	i+= 10 ;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("IX")){ 
+        	i+= 9;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("V")){ 
+        	i+= 5 ;
+        	number=(number.substring(0, number.length()-1));
+        }
+        if (number.endsWith("IV")){ 
+        	i+= 4 ;
+        	number=(number.substring(0,number.length()-2));
+        }
+        if (number.endsWith("I")){ 
+        	i+= 1 ;
+        	number=(number.substring(0, number.length()-1));
+        	
+        }
+        }
+        return i;
+    }
+	
+	public static void pal(String str){
+		boolean b=true;
+		for (int i=0;i<str.length()/2;i++){
+			if (str.charAt(i)!=str.charAt(str.length()-1-i)){
+				b=false;
+			}
+		}
+		if (b==true){
+			System.out.println(str+" jest palindromem");
+		}
+	} 
+	
 	public static void plec (String str){
 		if(str.endsWith("a")){
 			System.out.print(str+" jestes kobiet¹!!!");

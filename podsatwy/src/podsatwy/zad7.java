@@ -40,7 +40,7 @@ public static Scanner cin;
 		// TODO Auto-generated method stub
 		cin = new Scanner(System.in);
 		System.out.println("Podaj 0 aby zakonczyc");
-		int d1,d2,d3,suma=0;
+		int d1,suma=0;
 		System.out.println("Podaj liczbe");
 		d1=cin.nextInt();
 		/*System.out.println("Podaj Bok 2");

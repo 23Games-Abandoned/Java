@@ -63,7 +63,7 @@ public static Scanner cin;
 		// TODO Auto-generated method stub
 		cin = new Scanner(System.in);
 
-		int d1,d2,d3;
+		int d1;
 		System.out.println("Podaj liczbe");
 		d1=cin.nextInt();
 		podstawy.czyp(d1);
