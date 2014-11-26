@@ -1,0 +1,13 @@
+package stringi;
+
+import functions.str;
+
+public class zad1 {
+
+	public static void main(String[] args) {
+		String imie;
+		imie=str.load_S("Podaj imie :");
+		str.out_S(imie);
+		
+	}
+}

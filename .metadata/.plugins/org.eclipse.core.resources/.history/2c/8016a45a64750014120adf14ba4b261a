@@ -1,0 +1,11 @@
+package functions;
+
+public class str {
+
+	public static int load(String text){	//wypisanie textu i wczytanie inta 
+		System.out.print(text);
+		return cin.nextInt();
+	}
+	
+	
+}
