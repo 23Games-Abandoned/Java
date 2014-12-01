@@ -20,6 +20,16 @@ public class str {
 	System.out.println(str);
 	}
 	
+	public static int string_u(String str){
+		int s=0;
+		for(int i=0;i<str.length();i++){
+			if(Character.isUpperCase(str.charAt(i))){
+				s++;
+			}
+		}
+		return s;
+	}
+	
 	public static String string_r(String str){
 		return new StringBuilder(str).reverse().toString();
 	}
@@ -71,7 +81,7 @@ public class str {
         }
         if (number.endsWith("X")){ 
         	i+= 10 ;
-        	number=(number.substring(0,number.length()-2));
+        	number=(number.substring(0,number.length()-1));
         }
         if (number.endsWith("IX")){ 
         	i+= 9;
