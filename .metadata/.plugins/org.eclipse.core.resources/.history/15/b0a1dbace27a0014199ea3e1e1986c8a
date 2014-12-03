@@ -2,11 +2,12 @@ package stringi;
 
 import functions.str;
 
-public class zad2 {
-
+public class zad9 {
 	public static void main(String[] args) {
 		String str_;
-		str_=str.load_S("Podaj wyraz do odwrucenia");
+		str_=str.load_S("Podaj liczbe : ");
+		System.out.print(str.string_u(str_));
+			
 	}
 	
 }
