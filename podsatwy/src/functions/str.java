@@ -44,6 +44,66 @@ public class str {
 		return l;
 	}
 	
+	
+	public static String toRoman(int number) {
+		String i="";
+        while (number>0) {
+        if (number>1000){ 
+        	number-=1000;
+        	i+="M";
+        }
+        if (number>900){ 
+        	number-=900;
+        	i+="CM";
+        }
+        if (number>500){ 
+        	number-=500;
+        	i+="D";
+        }
+        if (number>400){ 
+        	number-=400;
+        	i+="CD";
+        }
+        if (number>100){ 
+        	number-=100;
+        	i+="C";
+        }
+        if (number>90){ 
+        	number-=90;
+        	i+="XC";
+        }
+        if (number>50){ 
+        	number-=50;
+        	i+="L";
+        }
+        if (number>40){ 
+        	number-=40;
+        	i+="XL";
+        }
+        if (number>10){ 
+        	number-=10;
+        	i+="X";
+        }
+        if (number>9){ 
+        	number-=9;
+        	i+="IX";
+        }
+        if (number>5){ 
+        	number-=5;
+        	i+="V";
+        }
+        if (number>4){ 
+        	number-=4;
+        	i+="IV";
+        }
+        if (number>1){ 
+        	number-=1;
+        	i+="I";
+        }
+        }
+        return i;
+    }
+	
 	public static int toArabic(String number) {
 		int i=0;
         while (number.length()>0) {
@@ -115,6 +175,35 @@ public class str {
 			System.out.println(str+" jest palindromem");
 		}
 	} 
+	
+	public static String spacer(String str) {
+		String fstr="";
+		for (int i=0;i<str.length();i++){
+			fstr+=str.charAt(i)+" ";
+		}
+		return fstr;
+	}
+	
+	public static String char_out(String str, String a) {
+		String r_str="";
+		String[] parts = str.split(a);
+		for(int i=0;i<parts.length;i++){
+			r_str+=parts[i];
+		}
+		return r_str;
+	}
+	
+	public static String flip(String str) {
+		String fstr="",a="";
+		if(str.length()%2!=0){
+			a=Character.toString(str.charAt((str.length()-1)));
+		}
+		for (int i=0;i<str.length()-1;i+=2){
+			fstr+=Character.toString(str.charAt(i+1))+Character.toString(str.charAt(i));
+		}
+		return fstr+a;
+	}
+	
 	
 	public static void plec (String str){
 		if(str.endsWith("a")){

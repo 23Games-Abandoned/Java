@@ -1,0 +1,13 @@
+package stringi;
+
+import functions.str;
+
+public class zad11 {
+
+	public static void main(String[] args) {
+		String str_,a;
+		str_=str.load_S("Podaj s³owo : ");
+		a=str.load_S("Podaj ltere : ");
+		System.out.println(str.char_out(str_, a));	
+	}
+}
