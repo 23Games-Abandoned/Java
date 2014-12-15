@@ -107,7 +107,6 @@ public class str {
         	number-=4;
         	i+="IV";
         }
-        else
         if (number>=1){ 
         	number-=1;
         	i+="I";
