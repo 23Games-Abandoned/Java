@@ -1,7 +1,7 @@
 
 public class Zad1 {
 	
-	public static int p=0,n=0;
+	public static int p=0,m=0;
 
 	public static void main(String[] args) {
 		int[] tab = new int[10];
@@ -16,15 +16,15 @@ public class Zad1 {
 
 		System.out.println();
 		for (int i=0;i<=tab.length-1;i++){
-			if (tab[i]%2==0){
+			if (tab[i]>0){
 				p+=tab[i];
 			} else {
-				n+=tab[i];
+				m+=tab[i];
 			}
-		}
+		}//Dupa pozdrawiam
 		
-		System.out.println("Suma parzystych wynosi: "+p);
-		System.out.println("Suma nieparzystych wynosi: "+n);
+		System.out.println("Suma dodatnich wynosi: "+p);
+		System.out.println("Suma ujemnych wynosi: "+m);
 	}
 
 }
